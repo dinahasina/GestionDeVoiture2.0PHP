@@ -1,0 +1,318 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+	width: 100%;
+}
+
+body{
+	background-color: silver;
+	height: 100%;
+	width: 100%;
+	min-width: 600px;
+	min-height: 440px; 
+}
+
+#en_tete{
+	background-color: rgb(0,0,64);
+	color: white;
+	height: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#en_tete h1, #en_tete h2{
+	font-size: 300%;
+	width: 50%;
+	min-width: 400px;
+	text-align: center;
+	margin: auto;
+}
+
+#en_tete p{
+	font-size: 150%;
+	width: 50%;
+	margin: auto;
+	text-align: center;
+}
+
+#corps{
+	height: 70%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#corps p{
+	margin: auto;
+	text-align: center;
+}
+
+#demande{
+	font-size: 150%;
+	width: 80%;
+}
+
+p.choix{
+	font-size: 200%;
+	width: 25%;
+	background-color: white;
+	border-radius: 40px;
+	height: 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-width: 300px;
+	box-shadow: 5px 5px 5px black;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.index , .choix_accueil{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 40px;
+}
+
+.index{
+	font-size: 120%;
+}
+
+label{
+	font-size: 150%;
+	text-align: left;
+
+}
+
+form , form#inscription{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+form{
+	height: 75%;
+}
+
+form#inscription{
+	height: 80%;
+	width: 100%;
+	display: flex;
+
+}
+
+form#inscription p{
+	width: 85%;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	min-width: 860px;
+}
+
+#pseudo_pris{
+	display: none;
+}
+
+form#inscription p input[type="text"] , form#inscription p input[type="password"]{
+	width: 500px;
+}
+
+form#inscription p label{
+	width: 40%;
+}
+
+form p{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#pseudo_pris{
+	color: red;
+	font-style: italic;
+	font-size: 20px;
+}
+
+input[type='submit'] , #retour{
+	width: 100px;
+	height: 30px;
+	background-color: white;
+	box-shadow: 4px 4px 4px black;
+	border-radius: 20px;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+input[type='text'], input[type='password']{
+	width: 300px;
+	height: 30px;
+	font-size: 20px;
+}
+
+.retour{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 120%;
+	border-radius: 20px;
+}
+
+#authentification{
+	color: red;
+	font-style: italic;
+	font-size: 20px;
+}
+
+#liste_choix {
+	height: 80%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+#liste_choix p{
+	margin: 1px;
+}
+
+.choix_accueil{
+	padding: 5%;
+}
+
+.personne_voiture{
+	width: 90%;
+}
+
+.tableau_personne{
+	width: 100%;
+}
+
+.tableau_voiture{
+	width: 75%;
+}
+
+#tout{
+	height: 80%;
+	width: 90%;
+	margin: auto;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.tableau_personne table{
+	width: 100%;
+}
+
+.tableau_personne table th{
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+}
+
+.tableau_personne table td{
+	background-color: white;
+	width: 25%;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.tableau_voiture table , .transfert_tableau_voiture table{
+	width: 100%;
+}
+
+.tableau_voiture table th , .transfert_tableau_voiture table th{
+	background-color: rgba(168, 15, 30, 0.4);
+	border-radius: 10px;
+}
+
+.tableau_voiture table td , .transfert_tableau_voiture table td{
+	background-color: white;
+	width: 25%;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.tableau_voiture{
+	display: flex;
+
+}
+
+input[type="button"]{
+	width: 100px;
+	height: 40px;
+	background-color: rgb(0, 0, 64);
+	color: white;
+	border-radius: 15px;
+}
+input[type="button"]:hover , input[type="submit"]:hover , a:hover{
+	background-color: black;
+	color: white;
+}
+
+.ajout_tout , .transfert_tout{
+	height: 100%;
+	width: 100%;
+	display: flex;
+}
+
+.liste_voitures{
+	width: 50%;
+}
+
+.ajout_formulaire{
+	width: 50%;
+}
+
+.ajout_formulaire form p{
+	height: 20%;
+	display: flex;
+	flex-direction: column;
+}
+
+.ajout_formulaire form p label{
+	font-size: 120%;
+}
+
+#voitures , #personnes, #bloc_personnes{
+	width: 100%;
+	height: 80%;
+	padding-top: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: auto;
+}
+
+.transfert_formulaire{
+	width: 50%;
+}
+
+.transfert_tableau_voiture{
+	display: flex;
+}
+
+#bloc_personnes{
+	height: 100%;
+	width: 75%;
+}
+
+form{
+	width: 80%;
+}
